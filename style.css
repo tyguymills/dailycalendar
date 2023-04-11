@@ -1,0 +1,46 @@
+:root {
+    --black:#000000;
+    --lightBlue:#add8e6;
+}
+
+
+header {
+    border-bottom: 3px solid black;
+}
+.container {
+    display:flex;
+    border:2px solid black;
+    padding:1rem 0px;
+}
+input {
+    font-size: 3rem;
+    /* min-width: 60%; */
+}
+button {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding:.75rem;
+    font-size:2.5rem;
+    background-color:var(--lightBlue);
+}
+@media only screen and (max-width: 1000px) {
+    button {
+        padding:0;
+        font-size: 2rem;
+    }
+    input {
+        font-size: 2.5rem;
+        min-width:75%;
+    }
+  }
+@media only screen and (max-width: 700px) {
+    button {
+        padding:0;
+        font-size: 2rem;
+    }
+    input {
+        font-size: 2.5rem;
+        min-width:50%;
+    }
+  }
