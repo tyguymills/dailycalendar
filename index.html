@@ -1,43 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Daily Calendar</title>
-</head>
-<body>
+  </head>
+  <body>
     <header id="header">
-            <div class="hero-container">
-                <h1><center>Today's Schedule</center></h1>
-            </div>
-            <div>
-                <center><h3 id="currentDate"></h3></center>
-            </div>
+      <div class="hero-container">
+        <h1><center>Today's Schedule</center></h1>
+      </div>
+      <div class="dateo">
+        <center><h3 id="currentDate"></h3></center>
+      </div>
     </header>
     <main>
+        <button onclick="resetStore()">clear</button>
+      <div class="schedule-items">
+        <div class="container schedule-item container0">
+          <label> 9 am </label>
+          <input id="9am" type="text" /><button onclick="saveData(event)">
+            Save
+          </button>
+        </div>
 
+        <div class="container schedule-item container1">
+          <label> 10 am </label>
+          <input id="10am" type="text" /><button onclick="saveData(event)">
+            Save
+          </button>
+        </div>
 
-        <div class="container container0">9 am<input id="9am" type="text"/><button onclick="saveData(e)">Save</button></div>
-        <div class="container container1">10 am<input id="10am" type="text"/><button onclick="saveData(e)">Save</button></div>
-        <div class="container container2">11 am<input id="11am" type="text"/><button onclick="saveData(e)">Save</button></div>
-        <div class="container container3">12 pm<input id="12pm" type="text"/><button onclick="saveData(e)">Save</button></div>
-        <div class="container container4">1 pm<input id="1pm" type="text"/><button onclick="saveData(e)">Save</button></div>
-        <div class="container container5">2 pm<input id="2pm" type="text"/><button onclick="saveData(e)">Save</button></div>
-        <div class="container container6">3 pm<input id="3pm" type="text"/><button onclick="saveData(e)">Save</button></div>
-        <div class="container container7">4 pm<input id="4pm" type="text"/><button onclick="saveData(e)">Save</button></div>
-        <div class="container container8">5 pm<input id="5pm" type="text"/><button onclick="saveData(e)">Save</button></div>
+        <div class="container schedule-item container2">
+          <label> 11 am </label>
+          <input id="11am" type="text" /><button onclick="saveData(event)">
+            Save
+          </button>
+        </div>
 
+        <div class="container schedule-item container3">
+          <label> 12 pm </label>
+          <input id="12pm" type="text" /><button onclick="saveData(event)">
+            Save
+          </button>
+        </div>
 
-        
+        <div class="container schedule-item container4">
+          <label> 1 pm </label>
+          <input id="1pm" type="text" /><button onclick="saveData(event)">
+            Save
+          </button>
+        </div>
 
+        <div class="container schedule-item container5">
+          <label> 2 pm </label>
+          <input id="2pm" type="text" /><button onclick="saveData(event)">
+            Save
+          </button>
+        </div>
+
+        <div class="container schedule-item container6">
+          <label> 3 pm </label>
+          <input id="3pm" type="text" /><button onclick="saveData(event)">
+            Save
+          </button>
+        </div>
+
+        <div class="container schedule-item container7">
+          <label> 4 pm </label>
+          <input id="4pm" type="text" /><button onclick="saveData(event)">
+            Save
+          </button>
+        </div>
+
+        <div class="container schedule-item container8">
+          <label> 5 pm </label>
+          <input id="5pm" type="text" /><button onclick="saveData(event)">
+            Save
+          </button>
+        </div>
+        <div class="container schedule-item container8">
+          <label> 11 pm </label>
+          <input id="5pm" type="text" /><button onclick="saveData(event)">
+            Save
+          </button>
+        </div>
+      </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
-    <script src="./index.js" ></script>
-    <script>
-        // var pTag = $("p");
-        // var parent = pTag.parent("#xyz");
-    </script>
-</body>
+    <script src="./index.js"></script>
+  </body>
 </html>
