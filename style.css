@@ -1,46 +1,97 @@
-:root {
-    --black:#000000;
-    --lightBlue:#add8e6;
+* .container {
+  background: white;
+}
+h3 {
+  font-size: 300px;
 }
 
+:root {
+  --black: #000000;
+  --lightBlue: #add8e6;
+}
 
+body {
+  background-color: tan;
+}
 header {
-    border-bottom: 3px solid black;
+  border-bottom: 3px solid black;
+}
+.dateo {
+  padding: 10px;
+  color: var(--black);
+}
+#currentDate {
+  font-size: 2rem;
+  color: black;
+  /* padding:100px; */
 }
 .container {
-    display:flex;
-    border:2px solid black;
-    padding:1rem 0px;
+  display: flex;
+  border: 2px solid black;
+  padding: 1rem 0px;
 }
 input {
-    font-size: 3rem;
-    /* min-width: 60%; */
+  font-size: 3rem;
 }
 button {
-    display:flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    padding:.75rem;
-    font-size:2.5rem;
-    background-color:var(--lightBlue);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0.75rem;
+  font-size: 2.5rem;
+  background-color: var(--lightBlue);
 }
 @media only screen and (max-width: 1000px) {
-    button {
-        padding:0;
-        font-size: 2rem;
-    }
-    input {
-        font-size: 2.5rem;
-        min-width:75%;
-    }
+  button {
+    padding: 0;
+    font-size: 2rem;
   }
+  input {
+    font-size: 2.5rem;
+    min-width: 75%;
+  }
+}
 @media only screen and (max-width: 700px) {
-    button {
-        padding:0;
-        font-size: 2rem;
-    }
-    input {
-        font-size: 2.5rem;
-        min-width:50%;
-    }
+  button {
+    padding: 0;
+    font-size: 2rem;
   }
+  input {
+    font-size: 2.5rem;
+    min-width: 50%;
+  }
+}
+
+.schedule-items {
+  padding: 40px;
+  gap: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.schedule-expired {
+  background-color: rgb(161, 63, 63);
+}
+
+.schedule-item {
+  width: clamp(25px, 55%, 1500px);
+  font-size: 1rem;
+  white-space: nowrap;
+  margin: auto;
+  display: flex;
+  padding: 0.8rem;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+
+.schedule-float-label {
+    position: absolute;
+    top: 0;
+    transform: translateY(-100%);
+}
+.schedule-item > input {
+  flex-grow: 2;
+}
